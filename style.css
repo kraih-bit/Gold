@@ -1,0 +1,21 @@
+
+body{
+font-family: Arial;
+background:#111;
+color:white;
+text-align:center;
+}
+
+#chart{
+width:1000px;
+height:600px;
+margin:auto;
+}
+
+.controls{
+margin-top:20px;
+}
+
+.stats{
+margin-top:15px;
+}
