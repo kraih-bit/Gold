@@ -9,7 +9,7 @@ app = FastAPI()
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
 # Load candle data
-data = pd.read_csv("data/XAUUSD_M1.csv")
+data = pd.read_csv("/XAUUSD_M1.csv")
 
 @app.get("/candles")
 def candles():
