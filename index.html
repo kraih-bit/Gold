@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gold Backtest Pro</title>
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Gold Backtest Pro Simulator</h2>
+<div id="chart"></div>
+
+<div class="controls">
+<button onclick="play()">Play</button>
+<button onclick="pause()">Pause</button>
+<button onclick="buy()">Buy</button>
+<button onclick="sell()">Sell</button>
+<button onclick="closeTrade()">Close Trade</button>
+
+<label>Speed</label>
+<input type="range" min="50" max="1000" value="200" id="speed">
+
+<label>Timeframe</label>
+<select id="timeframe">
+<option value="M1">M1</option>
+<option value="M5">M5</option>
+<option value="H1">H1</option>
+<option value="D1">D1</option>
+</select>
+</div>
+
+<div class="stats">
+<p>Balance: $<span id="balance">10000</span></p>
+<p>Current Position: <span id="position">None</span></p>
+<p>Profit/Loss: $<span id="pl">0</span></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
